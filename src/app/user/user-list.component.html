@@ -1,0 +1,8 @@
+<div>
+  <input #x />
+  <button (click)="add(x)">Add User</button>
+</div>
+
+<div *ngFor="let item of users; let i = index">
+  <user-detail [user]="item"></user-detail>
+</div>

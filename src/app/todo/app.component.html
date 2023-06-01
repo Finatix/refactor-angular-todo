@@ -1,0 +1,22 @@
+
+<nav>
+  <a routerLink="/todos">Todos</a>
+  <a routerLink="/users">Users</a>
+</nav>
+
+<div>
+  <input #x />
+  <button (click)="add(x)">Add</button>
+</div>
+
+<div *ngFor="let item of todo; let i = index">
+  <input type="checkbox" [(ngModel)]="item.completed">
+  <span [innerHTML]="item.title"></span>
+  <button (click)="remove(i)">Remove</button>
+</div>
+
+<hr>
+
+<user-list></user-list>
+
+

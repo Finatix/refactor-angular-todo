@@ -1,27 +1,36 @@
-# Untitled
+# Angular Todo App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.3.
+This app is a very basic todo app written in Angular. Currently, the app contains lots of issues
+and code that did not pass the test of time.
 
-## Development server
+This is really unfortunate, as we eventually aim to scale the project into an enterprise scale product, with multiple teams working on this codebase...
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## The Purpose
 
-## Code scaffolding
+This app is meant as a refactoring playground for frontend developers that will be given to applicants
+to roughly gauge their coding and clean code experience.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## The Content
 
-## Build
+The app contains two small functionalities.
+1. The ability to add, complete and delete todos.
+2. The ability to track and add usernames.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Apart from these functionalities, an attempt was started to split these two features into separate 
+routes. Unfortunately, the routing doesn't quite work yet.
 
-## Running unit tests
+## The Task
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Refactor the app to adhere to modern coding standards. Ideally, the app would also use modern 
+angular syntax.
 
-## Running end-to-end tests
+Maybe the code is then structured enough to replace the jsonplaceholder with something else.
+Who knows, maybe we can eventually get rid of it entirely. 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Our product owner also has a couple of requests:
+- The routing should've already worked. Please fix it.
+- Do not change the interface of the todo service. The PO really likes it the way it is. He wrote it himself.
+- If you encounter any bugs, please fix them immediately.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+The applicants are given a maximum of four hours for this task. Within these four hours, applicants may
+allot their time however they wish.
