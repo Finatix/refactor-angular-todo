@@ -1,0 +1,9 @@
+<div>
+  <input #x />
+  <button (click)="add(x)">Add User</button>
+</div>
+
+<div *ngFor="let item of user; let i = index">
+  <span [innerHTML]="item.name"></span>
+  <button (click)="remove(i)">Remove User</button>
+</div>
